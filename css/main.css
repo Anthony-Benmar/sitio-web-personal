@@ -1,0 +1,246 @@
+
+#ribbon{
+    background-color: rgb(41, 159, 228);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
+}
+
+/* cinta de separacion */
+#ribbon::after{
+    content: '';
+    background-color: transparent;
+    display: block;
+    height: 5px;
+    width: 30%;
+    margin: 0 auto;
+    position: relative;
+    left: auto;
+    margin-top: -40px;
+}
+
+/* cuadro central de la cinta de separacion */
+#birthday{
+    background-color: rgb(35, 156, 226);
+    position: relative;
+    margin-top: -40px;
+    z-index: 10;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* posicion de la imagen de la cinta */
+#birthday img{
+    position: relative;
+
+}
+
+.text-shadow{
+    text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+/* separador */
+
+#separator-ribbon{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#separator-ribbon .content{
+    width: 150%;
+    height: 150px;
+    margin-left: -25%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.card-border{
+    border: solid 10px white;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: all ease-out 0.2s;
+}
+
+.card-border:hover{
+    transform: scale(1.05);
+}
+
+#games{
+    background: rgb(255, 255, 255);
+    background: url(../img/bg-02.png), linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(99,196,255,1) 57%);
+    background-repeat: repeat-x;
+    background-size: 75%;
+    margin-top: -20px;
+}
+
+/* separador familia */
+#separator-hobies{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 2;
+}
+
+#hobies{
+    background: url(../img/bg-011.png);
+    background-repeat: no-repeat, repeat;
+    background-position: bottom center, center center;
+    background-size: 100%, auto;
+}
+
+.hobie{
+    cursor: pointer;
+    transition: all ease-out 0.2;
+}
+
+.hobie:hover{
+    transform: scale(1.05);
+}
+
+.hobie-name{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.contenedor-video{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.footer{
+    background-color: #1D293F; /* color del footer */
+}
+
+.footer__title{
+    font-weight: 300; /* grosor de la letra CURSO CSS. */
+    font-size: 2rem; /* tamaño de la letra CURSO CSS. */
+    margin-bottom: 30px; /* poco mas arriba */
+}
+
+.footer__title, .footer__newsletter{
+    color: #fff; /* color de la letra */
+}
+
+.footer__container{
+    display: flex; /* para poner un elemento a lado del otro */
+    justify-content: space-between; /* que los elementos se peguen a las esquinas */
+    align-items: center; /* que los elementos se centren verticalmente */
+    border-bottom: 1px solid #fff;
+    padding: 60px;
+}
+
+.nav--footer{
+    padding-bottom: 20px;
+    display: grid; /* llevamos el menu bajo el CURSO CSS. */
+    gap: 1em;
+    grid-auto-flow: row;
+    height: 100%;
+}
+
+.nav__link--footer{
+    display: flex;
+    margin: 0; /* le quitamos los margenes */
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.footer__inputs{
+    margin-top: 10px;
+    display: flex;
+    overflow: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.footer__copy{
+    --padding-container: 30px 0;
+    text-align: center; /* centramos el texto */
+    color: #fff; /* color de la letra */
+}
+
+.footer__copyright{
+    font-weight: 300;
+}
+
+.footer__icons{
+    margin-bottom: 10px; /* espacio */
+}
+
+.footer__img{
+    width: 30px; /* tamaño */
+}
+
+#ubicacion{
+    background: url(../img/bg-04.png);
+    background-color: rgb(153, 253, 253);
+    background-size: 40px 40px;
+}
+
+/* gotop */
+
+.go-top-container{
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    width: 1rem;
+    height: 1rem;
+    z-index: -1;
+}
+
+.go-top-button{
+    width: 0rem;
+    height: 0rem;
+    background: #2071b2;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i{
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: #ffff;
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .5s ease-in-out;
+    width: 6.6rem;
+    height: 6.6rem;
+    z-index: 11;
+}
+
+.show i{
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup{ 
+    0%{
+        width: 0rem;
+        height: 0rem;
+    }
+    50%{
+        width: 8rem;
+        height: 8rem;
+    }
+    100%{
+        width: 6.6rem;
+        height: 6.6rem;
+    }
+}

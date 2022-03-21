@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mi pagina web personal</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="./images/anthony.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lw4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndoJK28anvf" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <section class="inicio" id="inicio">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo1.png" alt="" width="150">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toogle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#fotos">Fotos y videos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#hobbies">Mis Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicaciones y Playlist</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Carrusel-->
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slide01.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide02.jpg" class="d-block w-100" alt="">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide04.jpg" class="d-block w-100" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!--Cinta-->
+    <div id="ribbon" class="container-fluid">
+        <div id="birthday" class="container w-50 pl-5 rounded-lg">
+
+            <div class="row align-items-center">
+                <div class="col-sm p-3">
+                    <img src="img/image01.png" class="w-100 mx-auto d-block" alt="">
+                </div>
+
+                <div class="col-sm p-3 text-light text-center">
+                    <p class="text-warning h3 text-shadow">Mi página personal</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Separador de cinta-->
+
+    <div id="separator-ribbon">
+        <div class="content bg-info"></div>
+    </div>
+
+    <!--SeparadorMi familia-->
+
+    <section class="fotos" id="fotos">
+        <div id="games">
+            <div class="container-md p-5">
+                <div class="row pt-5">
+                    <h3 class="text-center pb-5 pt-5 h1 text-shadow">Fotos y videos personales</h3>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5" style="width: 18rem;">
+                            <img src="img/card01.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Mis Papás</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5" style="width: 18rem;">
+                            <img src="img/card02.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Mis Familia</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="card w-100 card-border mb-5" style="width: 18rem;">
+                            <img src="img/card03.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Mi enamorada</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <center>
+                            <div class="card w-75 card-border mb-5" style="width: 18rem;">
+                                <video controls width="100%" height="100%" src="img/VID-20220129-WA0049.mp4"></video>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Video mio</h5>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                    <div class="col-sm">
+                        <center>
+                            <div class="card w-75 card-border mb-5" style="width: 18rem;">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/acemWLl8NOs"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                                <div class="card-body">
+                                    <h5 class="card-title text-center">Video mio</h5>
+                                </div>
+                            </div>
+                        </center>
+                    </div>
+                </div>
+
+                <div class="row py-5">
+                    <div class="col">
+                        <h3 class="text-center h1 text-shadow" class="text-center">Algo mas de mi</h3>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-2 w-25"><a href="https://www.uandina.edu.pe/">Universidad en la que estudio</a>
+                    </div>
+                    <div class="col-2 w-25"><a href="https://www.fcbarcelona.es/es/">Equipo de futbol favorito</a></div>
+                    <div class="col-2 w-25"><a href="https://treinta.shop/face-mask-a-k-ec8c">Sitio web de mi tienda
+                            virtual</a></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Hobies-->
+
+    <section class="hobbies" id="hobbies">
+        <div id="hobies" class="px-4 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h3 class="text-center pt-5 h1 text-shadow">Mis Hobbies</h3>
+                </div>
+                <br>
+                <br>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-4">
+                    <div class="col-sm">
+                        <img src="img/image011.png" alt="" class="w-100 hobie">
+                        <div class="text-center"><span class="hobie-name h5 p-2">Fútbol</span></div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/image022.png" alt="" class="w-100 hobie">
+                        <div class="text-center"><span class="hobie-name h5 p-2">Natación</span></div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/image033.png" alt="" class="w-100 hobie">
+                        <div class="text-center"><span class="hobie-name h5 p-2">Programar</span></div>
+                    </div>
+                    <div class="col-sm">
+                        <img src="img/image044.png" alt="" class="w-100 hobie">
+                        <div class="text-center"><span class="hobie-name h5 p-2">Viajar</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Mas informacion-->
+
+    <section class="ubicacion" id="ubicacion">
+        <div id="ubicacion">
+            <div class="container-sm p-5">
+                <div class="row">
+                    <h3 class="pb-5 text-center text-center h1">Ubicaciones y Playlist</h3>
+                </div>
+                <center>
+                    <div class="col p-1">
+                        <div class="card bg-primary text-white" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <iframe width="100%" height="100%"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7764.904664886045!2d-71.95325839999997!3d-13.322115000000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916ddf5fe943e267%3A0xbc28468e03c7a2e9!2sCalle%20San%20Martin%20de%20Porres%20201%2C%20Calca%2008121!5e0!3m2!1ses!2spe!4v1647823887342!5m2!1ses!2spe"
+                                        width="600" height="450" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vivo en CALCA</h5>
+                                        <p class="card-text">calle San Marin N°186</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col p-1">
+                        <div class="card bg-primary text-white" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-6">
+                                    <iframe width="100%" height="100%"
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1372.647141184518!2d-71.95232406326465!3d-13.323356741068082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916ddf5f86e83611%3A0x5a5eb82c785b9c2f!2sEstadio%20THOMAS%20E.%20PAYNE%20DE%20CALCA%2C%20Calca!5e0!3m2!1ses!2spe!4v1647824825084!5m2!1ses!2spe"
+                                        width="600" height="450" style="border:0;" allowfullscreen=""
+                                        loading="lazy"></iframe>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Estadio THOMAS E. PAYNE DE CALCA</h5>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            </center>
+            <center>
+                <div class="card text-white" style="max-width: 540px;">
+                    <div>
+                        <div>
+                            <iframe style="border-radius:12px"
+                                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6aTaZa0K6VA?utm_source=generator"
+                                width="100%" height="380" frameBorder="0" allowfullscreen=""
+                                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </center>
+        </div>
+    </section>
+
+    <!--Footer-->
+
+    <footer class="footer pt-4">
+
+        <section class="footer__copy container">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/AnthonyBenmar" class="footer__icons"><img src="./img/facebook.svg"
+                        class="footer__img"></a>
+                <a href="https://twitter.com/?lang=es" class="footer__icons"><img src="./img/twitter.svg"
+                        class="footer__img"></a>
+                <a href="https://www.youtube.com/channel/UCobtgLa61cUYsJBJHqLgHtw" class="footer__icons"><img
+                        src="./img/youtube.svg" class="footer__img"></a>
+            </div>
+            <h3 class="footer__copyright">Derechos reservados &copy; Anthony Benmar Inquiltupa Morales</h3>
+        </section>
+        <br>
+    </footer>
+
+    <!--botop-->
+
+    <div class="go-top-container">
+        <div class="go-top-button">
+            <i class="fas fa-chevron-up"></i>
+        </div>
+    </div>
+
+
+    <script src="js/botontop.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
